@@ -1,0 +1,6 @@
+package edu.bluejack19_1.KumVulanDFreelancer
+
+import edu.bluejack19_1.KumVulanDFreelancer.fragments.HomeFragmentContainer
+
+lateinit var mainActivityInstance: MainActivity
+lateinit var homeFragmentContainer: HomeFragmentContainer

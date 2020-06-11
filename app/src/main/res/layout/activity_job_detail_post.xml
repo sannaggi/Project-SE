@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/progress_circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ProgressBar
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/jobDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:background="@drawable/account_background"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtJobName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Job name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgClient"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="35dp"
+                            android:contentDescription="@string/profile_image"
+                            android:cropToPadding="false"
+                            android:fitsSystemWindows="false"
+                            tools:src="@drawable/ddd" />
+
+                        <TextView
+                            android:id="@+id/txtClientName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/client"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="180dp"
+                        android:background="#ffffff"
+                        android:layout_gravity="center_vertical"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgFreelancer"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="35dp"
+                            android:contentDescription="@string/profile_image"
+                            android:cropToPadding="false"
+                            android:fitsSystemWindows="false"
+                            tools:src="@drawable/ddd" />
+
+                        <TextView
+                            android:id="@+id/txtFreelancerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/loading"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/freelancer"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.95"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="@string/price"/>
+
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        tools:text="@string/loading"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.95"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:text="@string/deadline"/>
+
+                    <TextView
+                        android:id="@+id/txtDeadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        tools:text="@string/loading"
+                        android:maxLines="1"
+                        android:ellipsize="end"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:orientation="vertical"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        tools:text="@string/loading"
+                        android:textColor="@color/colorBlue"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@color/red"
+                        android:text="@string/cancel_job"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <Button
+                        android:id="@+id/btnFinish"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/finish_job"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

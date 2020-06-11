@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:background="@drawable/account_background"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btnEdit"
+                android:layout_width="38dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/profile_edit"
+                app:srcCompat="@drawable/edit" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileImage"
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@string/profile_image"
+                android:cropToPadding="false"
+                android:fitsSystemWindows="false"
+                tools:src="@drawable/ddd" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/profile_about"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txtAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_about"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="@string/profile_logout"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btnRegisterFreelancer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/register_as_freelancer"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/colorBlue"/>
+
+                <TextView
+                    android:id="@+id/btnAboutAndDisclaimerClient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/about_us_and_disclaimer"
+                    android:textColor="@android:color/holo_red_dark"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

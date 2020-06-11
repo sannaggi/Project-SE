@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@drawable/bottom_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/jobs"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/job_sort_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/history_sort_array"
+        android:prompt="@string/history_sort_prompt"
+        android:textAlignment="center"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/soft_border_gray"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Spinner
+        android:id="@+id/job_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/job_categories_array"
+        android:prompt="@string/history_sort_prompt"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_green_gradient"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/job_search_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:backgroundTint="@color/white"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/job_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

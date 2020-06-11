@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="About Us"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Welcome to KumVulanDFreelancer, your number one source for searching project and freelancer. Being in the middleman we're dedicated to bring you the most easy and free information."
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/textView_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Disclaimer"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:text="Every transaction using this application is not under the developer supervision or one of the developer responsibility."
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

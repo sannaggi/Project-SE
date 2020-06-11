@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatPageActivity"
+    android:orientation="vertical"
+    android:layout_gravity="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_page_profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/chat_page_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:text="Name"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_page_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="8"
+            android:background="@drawable/soft_edge_white"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="6dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/chat_page_chatbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chat_page_send_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:src="@drawable/ic_action_send"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</LinearLayout>

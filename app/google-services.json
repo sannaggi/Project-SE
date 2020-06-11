@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "460995354164",
+    "firebase_url": "https://kumvulandfreelancer.firebaseio.com",
+    "project_id": "kumvulandfreelancer",
+    "storage_bucket": "kumvulandfreelancer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:460995354164:android:757742904042140ad0b461",
+        "android_client_info": {
+          "package_name": "edu.bluejack19_1.KumVulanDFreelancer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "460995354164-r58jiavji6f7q2525dqinc7l2ethanmf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBizkU0qKunaURHUgXf58Nq5_5yj3GqyTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "460995354164-r58jiavji6f7q2525dqinc7l2ethanmf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

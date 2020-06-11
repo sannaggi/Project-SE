@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GivingReviewActivity"
+    android:background="@color/gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/giving_review_star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★"
+            android:textSize="60dp"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/giving_review_star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★"
+            android:textSize="60dp"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/giving_review_star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★"
+            android:textSize="60dp"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/giving_review_star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★"
+            android:textSize="60dp"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+        <TextView
+            android:id="@+id/giving_review_star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="★"
+            android:textSize="60dp"
+            android:layout_margin="10dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Review :"
+        android:textSize="18dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/soft_edge_white"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/giving_review_review_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/giving_review_submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:background="@drawable/soft_border_green"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="22dp"
+        android:clickable="true"/>
+
+</LinearLayout>

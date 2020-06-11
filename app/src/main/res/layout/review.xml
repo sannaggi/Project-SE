@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView_job_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/imgProfile"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User A"
+                android:id="@+id/txtName"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="4 ★"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txtRating"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="asdsadhaudahdisahdusiahsuaihsahsaudhsaidhsauidhsauidhsaiudhsaiudhsauidhsadui" />
+
+        <LinearLayout
+            android:id="@+id/review_like_dislike"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            >
+            <TextView
+                android:id="@+id/review_dislike_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👎"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/review_dislike_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dislike Count"
+                android:layout_marginRight="12dp"/>
+            <TextView
+                android:id="@+id/review_like_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="👍"
+                android:textSize="20dp"
+                android:layout_marginRight="5dp"/>
+
+            <TextView
+                android:id="@+id/review_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Like Count"
+                android:layout_marginRight="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

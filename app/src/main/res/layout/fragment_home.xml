@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/bottom_border">
+
+            <TextView
+                android:id="@+id/text_home"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/home"
+                android:textSize="25sp"
+                android:gravity="center_vertical"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinnerRole"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/btnHistory"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@android:drawable/ic_input_get"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/jobsContainer"
+            android:background="@drawable/blue_green_gradient"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:id="@+id/progress_circular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/brownishOrange"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loading"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emptyJobMessageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_have_no_active_job"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="50dp"/>
+
+                <Button
+                    android:orientation="vertical"
+                    android:id="@+id/btnRedirectJobs"
+                    android:layout_width="216dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_for_job"
+                    android:background="@drawable/soft_border_brownish_orange"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:id="@+id/btnNewJob"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:text="@string/issue_new_job"
+                android:background="#FFFFFF"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"/>
+
+            <LinearLayout
+                android:id="@+id/onGoingJobsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_active_job"
+                    android:textColor="#ffffff"
+                    android:textSize="23sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <ListView
+                    android:id="@+id/listTakenJobs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="15dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

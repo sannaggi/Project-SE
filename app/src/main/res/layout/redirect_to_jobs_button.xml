@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <Button
+        android:orientation="vertical"
+        android:id="@+id/btnRedirect"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search_for_job"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+</LinearLayout>

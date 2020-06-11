@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:id="@+id/progress_loading"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:translationZ="90dp"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/brownishOrange"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="visible"
+                android:id="@+id/progress_circular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ProgressBar
+                    android:visibility="visible"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/jobDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:background="@drawable/account_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtJobName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Job name"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/imgClient"
+                                android:layout_width="90dp"
+                                android:layout_height="90dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="35dp"
+                                android:contentDescription="@string/profile_image"
+                                android:cropToPadding="false"
+                                android:fitsSystemWindows="false"
+                                tools:src="@drawable/ddd" />
+
+                            <TextView
+                                android:id="@+id/txtClientName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/loading"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/client"
+                                android:textAlignment="center"
+                                android:textColor="#ffffff"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/price"/>
+
+                        <TextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            tools:text="@string/loading"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:text="@string/deadline"/>
+
+                        <TextView
+                            android:id="@+id/txtDeadline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            tools:text="@string/loading"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/description"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/applicantsContainer"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:id="@+id/txtApplicant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/applicants"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:id="@+id/applicantsList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/profile_image"
+        android:cropToPadding="false"
+        android:fitsSystemWindows="false"
+        tools:src="@drawable/ddd" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/accept"
+            android:textSize="12sp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="@string/reject"
+            android:textSize="12sp"
+            android:background="@color/red"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

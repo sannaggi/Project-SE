@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PeopleFragment"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chat"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textSize="24dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/soft_border_gray"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <Spinner
+        android:id="@+id/people_chat_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/chat_people_categories"
+        android:prompt="@string/chat_people_prompt"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blue_green_gradient">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_people"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>
